@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/jquery/jquery-nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="assets/vendors/jquery/jquery-nice-select/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>WiLend</title>
+</head>
+<body>
+<div class="main-layout">
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="flex-row align-items-center justify-content-space-between">
+                    <p class="header__top__note">
+                        Contact with us
+                        <a href="#" class="ml-1">
+                            example@email.com
+                        </a>
+                        <a href="#" class="ml-3">
+                            +00 968 250 26 00
+                        </a>
+
+                    </p>
+                    <div class="header__top__item">
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="social__item facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social__item twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social__item instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header__bottom">
+                <div class="mobile-header">
+                    <div class="logo-wrapper">
+                        <img src="assets/images/logo/wi_Lend.png" class="logo" alt="Logo">
+                    </div>
+                    <div class="menu-icon" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <nav class="main-menu" id="menu">
+                    <button class="close-menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu">
+                        <li class="active">
+                            <a href="#top" class="menu__item">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#about" class="menu__item">About</a>
+                        </li>
+                        <li class="">
+                            <a href="#services" class="menu__item">BUSINESS VERTICALS</a>
+                        </li>
+                        <li class="">
+                            <a href="#workflow" class="menu__item">Workflow</a>
+                        </li>
+                        <li class="">
+                            <a href="#contact" class="menu__item">Contact</a>
+                        </li>
+                        <li class="">
+                            <a href="apply-loan.html" class="menu__item">Apply Loan</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="top" class="hero-section" style="background-image:url('assets/images/Picture13.jpg')">
+        <div class="hero-section__overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12 ">
+                        <div class="hero-section__tab-area">
+                            <div class="tab-wrapper" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade active show" id="personal">
+                                        <div class="loan-form">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <h2 class="loan-form__title">Get Personal Loan</h2>
+                                                    </div>
+                                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                                        <div class="">
+                                                            <label class="loan-form__label">Loan Purpose</label>
+                                                            <select class="wide" style="display: none;">
+                                                                <option value="Select Loan Purpose">Select Loan Purpose
+                                                                </option>
+                                                                <option value="Debt Consolidation">Major Purpose
+                                                                </option>
+                                                                <option value="Wedding Expenses">Wedding Expenses
+                                                                </option>
+                                                                <option value="Home Improvement">Vacation</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                                        <a href="#" class="btn-get-loan">Get Your Loan</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane fade" id="auto">
+                                        <div class="loan-form">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <h2 class="loan-form__title">Get Car Loan</h2>
+                                                    </div>
+                                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                                        <div class="">
+                                                            <label class="loan-form__label">Loan Purpose</label>
+                                                            <select class="wide" style="display: none;">
+                                                                <option value="Select Loan Purpose">Select Loan Purpose
+                                                                </option>
+                                                                <option value="Debt Consolidation">Car Loan
+                                                                </option>
+                                                                <option value="Wedding Expenses">Vehical Claim
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                                        <a href="#" class="btn-get-loan">Get Your Loan</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane fade" id="medical">
+                                        <div class="loan-form">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <h2 class="loan-form__title">Get Medical Loan</h2>
+                                                    </div>
+                                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                                        <div class="">
+                                                            <label class="loan-form__label">Loan Purpose</label>
+                                                            <select class="wide" style="display: none;">
+                                                                <option value="Select Loan Purpose">Select Loan Purpose
+                                                                </option>
+                                                                <option value="Debt Consolidation">Surgery
+                                                                </option>
+                                                                <option value="Wedding Expenses">Cosmetic enhancements
+                                                                </option>
+                                                                <option value="Wedding Expenses">Dental procedures
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                                        <a href="#" class="btn-get-loan">Get Your Loan</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane fade" id="home">
+                                        <div class="loan-form">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <h2 class="loan-form__title">Get Home Loan</h2>
+                                                    </div>
+                                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                                        <div class="">
+                                                            <label class="loan-form__label">Loan Purpose</label>
+                                                            <select class="wide" style="display: none;">
+                                                                <option value="Select Loan Purpose">Select Loan Purpose
+                                                                </option>
+                                                                <option value="Debt Consolidation">Home Buying
+                                                                </option>
+                                                                <option value="Wedding Expenses">Home Improevement
+                                                                </option>
+                                                                <option value="Wedding Expenses">Moving Relocation
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                                        <a href="#" class="btn-get-loan">Get Your Loan</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane fade" id="biz-invoice">
+                                        <div class="loan-form">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <h2 class="loan-form__title">Get Biz-Invoice Loan</h2>
+                                                    </div>
+                                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                                        <div class="">
+                                                            <label class="loan-form__label">Loan Purpose</label>
+                                                            <select class="wide" style="display: none;">
+                                                                <option value="Select Loan Purpose">Select Loan
+                                                                    Purpose
+                                                                </option>
+                                                                <option value="Debt Consolidation">Purpose 1</option>
+                                                                <option value="Wedding Expenses">Purpose 2</option>
+                                                                <option value="Wedding Expenses">Purpose 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                                        <a href="#" class="btn-get-loan">Get Your Loan</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="nav tab" id="get-loans" role="tablist">
+                                    <li class="tab__item">
+                                        <a class="tab__item__link active show" id="tab-1" data-toggle="tab"
+                                           href="#personal"
+                                           role="tab" aria-controls="responsibilities" aria-selected="true">
+                                            <i class="far fa-user-circle"></i>
+                                            <p>Personal</p></a>
+                                    </li>
+                                    <li class="tab__item">
+                                        <a class="tab__item__link" id="tab-2" data-toggle="tab" href="#auto"
+                                           role="tab" aria-controls="responsibilities" aria-selected="true">
+                                            <i class="fas fa-car"></i>
+                                            <p>Auto</p></a>
+                                    </li>
+                                    <li class="tab__item">
+                                        <a class="tab__item__link" id="tab-3" data-toggle="tab" href="#medical"
+                                           role="tab" aria-controls="responsibilities" aria-selected="true">
+                                            <i class="fas fa-hospital"></i>
+                                            <p>Medical</p></a>
+                                    </li>
+                                    <li class="tab__item">
+                                        <a class="tab__item__link" id="tab-4" data-toggle="tab" href="#home"
+                                           role="tab" aria-controls="responsibilities" aria-selected="true">
+                                            <i class="fas fa-home"></i>
+                                            <p>Home</p></a>
+                                    </li>
+                                    <li class="tab__item">
+                                        <a class="tab__item__link" id="tab-5" data-toggle="tab" href="#biz-invoice"
+                                           role="tab" aria-controls="responsibilities" aria-selected="true">
+                                            <i class="fas fa-file-invoice-dollar"></i>
+                                            <p>Biz Invoice</p></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="welcome-wrap section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="welcome-info" class="welcome-info" data-aos="fade-right" data-aos-duration="1000">
+                        <h1 class="welcome-info__title">Welcome to <span class="brand">WiLend</span></h1>
+                        <h3 class="welcome-info__slug">Liquitity Solutions</h3>
+                        <p class="welcome-info__details">
+                            As a business ourselves, we understand the importance of managing liquidity; we need to
+                            preserve
+                            capital, maintain liquidity and seek competitive investment yields, all while managing
+                            risks.
+
+                            wiLend has the expertise to provide individuals and SMEs with insights to make informed
+                            financial decisions when it comes to their personal or business’ liquidity. Rely on our
+                            innovative liquidity solutions as wiLend advise individuals or SMEs and tailor a financial
+                            solution that is best suited to finance their needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="welcome-image" class="welcome-image" style="background-image: url('assets/images/18.jpg')"
+                         data-aos="fade-left" data-aos-duration="1000">
+                        <!--                        <img src="assets/images/18.jpg" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <br>
+        </div>
+    </div>
+
+    <div id="services section" class="business-verticals" style="background-image: url('assets/images/Picture12.jpg')">
+        <div class="business-verticals__overlay">
+            <div class="container">
+                <h3 class="business-verticals__title">
+                    <span class="brand">WILEND</span> BUSINESS VERTICALS
+                </h3>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 col-sm-12">
+                        <div class="services-box" data-aos="fade-right" data-aos-duration="1000">
+                            <div>
+                                <div class="icons">
+                                    <a href="#">
+                                        <i class="far fa-user-circle"></i>
+                                    </a>
+                                </div>
+                                <h4 class="services-box__title">
+                                    <a href="#">Personal Loan</a>
+                                </h4>
+                                <p>
+                                    You can get a loan from us for your any personal work.
+                                </p>
+                            </div>
+                            <div class="more">
+                                <a href="http://accountantwp.azelab.com/serv/investment-approvals/">
+                                    Read More
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-12">
+                        <div class="services-box box" data-aos="fade-down" data-aos-duration="800">
+                            <div>
+                                <div class="icons">
+                                    <a href="#">
+                                        <i class="fas fa-car"></i>
+                                    </a>
+                                </div>
+                                <h4 class="services-box__title">
+                                    <a href="#">Auto</a>
+                                </h4>
+                                <p>
+                                    You can get a loan from us for your any kind of medical emergency.
+                                </p>
+                            </div>
+                            <div class="more">
+                                <a href="#">
+                                    Read More
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-12">
+                        <div class="services-box box" data-aos="fade-left" data-aos-duration="1000">
+                            <div>
+                                <div class="icons">
+                                    <a href="#">
+                                        <i class="fas fa-hospital"></i>
+                                    </a>
+                                </div>
+                                <h4 class="services-box__title">
+                                    <a href="#">Medical</a>
+                                </h4>
+                                <p>
+                                    Duis a est tincidunt, consectetur ex id, mollis tellus mauris feugiat elit.
+                                </p>
+                            </div>
+                            <div class="more">
+                                <a href="#">
+                                    Read More
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-12">
+                        <div class="services-box box" data-aos="fade-right" data-aos-duration="1000">
+                            <div>
+                                <div class="icons">
+                                    <a href="#">
+                                        <i class="fas fa-home"></i>
+                                    </a>
+                                </div>
+                                <h4 class="services-box__title">
+                                    <a href="#">Home</a>
+                                </h4>
+                                <p>
+                                    You can get a loan from us to buy a new home.
+                                </p>
+                            </div>
+                            <div class="more">
+                                <a href="#">
+                                    Read More
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-sm-12">
+                        <div class="services-box box" data-aos="fade-left" data-aos-duration="1000">
+                            <div>
+                                <div class="icons">
+                                    <a href="#">
+                                        <i class="fas fa-file-invoice-dollar"></i>
+                                    </a>
+                                </div>
+                                <h4 class="services-box__title">
+                                    <a href="#">Biz Invoice</a>
+                                </h4>
+                                <p>
+                                    You can create Biz-Invoice with us.
+                                </p>
+                            </div>
+                            <div class="more">
+                                <a href="#">
+                                    Read More
+                                    <i class="fa fa-long-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="workflow section" id="workflow">
+        <div class="container work-process">
+            <h3 class="workflow__title">
+                LOAN PROCESS <span class="brand">WORKFLOW</span>
+            </h3>
+            <div class="mt-5">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="process-step">
+                                        <p class="m-0 p-0">
+                                            <i class="fas fa-file-signature"></i>
+                                        </p>
+                                        <h2 class="m-0 p-0">01</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 pl-0">
+                                    <h5>APPLICATION</h5>
+                                    <p>
+                                        Borrower originate loan by filing preliminary personal & loan
+                                        information
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="process-line-l"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <div class="process-point-left"></div>
+                    </div>
+                </div>
+                <!-- ============ step 2 =========== -->
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="process-point-right"></div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="process-step">
+                                        <p class="m-0 p-0">
+                                            <i class="fas fa-user-check"></i>
+                                        </p>
+                                        <h2 class="m-0 p-0">02</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 pl-0">
+                                    <h5>VERIFICATION</h5>
+                                    <p>
+                                        Personal, business & financial data verification being done in backend
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="process-line-r"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ============ step 3 =========== -->
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="process-step">
+                                        <p class="m-0 p-0">
+                                            <i class="fas fa-money-check-alt"></i>
+                                        </p>
+                                        <h2 class="m-0 p-0">03</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 pl-0">
+                                    <h5>CHECK RATES</h5>
+                                    <p>
+                                        Loan information is prepared & submitted to partnering banks for rates
+                                        checks
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="process-line-l"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <div class="process-point-left"></div>
+                    </div>
+                </div>
+                <!-- ============ step 4 =========== -->
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="process-point-right process-last"></div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <div class="process-box process-right mb-0" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="process-step">
+                                        <p class="m-0 p-0">
+                                            <i class="fas fa-check-double"></i>
+                                        </p>
+                                        <h2 class="m-0 p-0">04</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 pl-0">
+                                    <h5>ACCEPTANCE</h5>
+                                    <p>
+                                        Borrower accepts loan rates and terms. Loan agreement is signed.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="process-line-r"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section why-chose-us">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12">
+                    <div class="section-title text-center mb-5">
+                        <h3 class="section__title">Why take a <span class="brand">loan with us?</span></h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 why-box">
+                    <div class="text-center mb-3">
+                        <h5 class="mb-2 why-box__title">Fast</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, unde.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 why-box">
+                    <div class="text-center mb-3">
+                        <h5 class="mb-2 why-box__title">Flexible </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, unde.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 why-box">
+                    <div class="text-center">
+                        <h5 class="mb-2 why-box__title">Great rates</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, unde.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact section">
+        <div class="container">
+            <h3 class="contact__title">Drop Us a <span class="brand">Message</span></h3>
+            <div class="contact__form">
+                <form action="#">
+                    <div class="row">
+                        <div class="form-field col-md-6">
+                            <!--<label>Name:</label>-->
+                            <input type="text" class="form-field__item" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-field col-md-6">
+                            <!--<label>Email:</label>-->
+                            <input type="email" class="form-field__item" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-field col-md-12">
+                            <!--<label>Subject:</label>-->
+                            <input type="text" class="form-field__item" placeholder="Enter subject">
+                        </div>
+
+                        <div class="form-field col-md-12">
+                            <!--<label>Message:</label>-->
+                            <textarea class="form-field__item" cols="5" rows="5" placeholder="Message..."></textarea>
+                        </div>
+
+                        <div class="form-field__bottom">
+                            <input type="submit" value="Submit" class="form-field__button">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer-container">
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="widget widget_text">
+                            <div class="textwidget">
+                                <h3>
+                                    Don’t hesitate, contact us.</h3>
+                                <br>
+                                <h4>
+                                    1-800-<span
+                                    class="text-uppercase brand">WiLend</span>-4506
+                                </h4>
+                                <br>
+                                <p class="text-default-color text-big">
+                                    Example Street 68, Mahattan, New York, USA. +00 123 456 789
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="widget widget_text">
+                            <h5 class="widget-title">Useful links</h5>
+                            <div class="textwidget">
+                                <div class="widget-pages">
+                                    <ul>
+                                        <li><a href="#">Personal Loan</a></li>
+                                        <li><a href="#">Auto Loan</a></li>
+                                        <li><a href="#">Medical Loan</a></li>
+                                        <li><a href="#">Home Loan</a></li>
+                                        <li><a href="#">Biz Invoice</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="text-4" class="widget widget_text">
+                            <h5 class="widget-title">Useful links</h5>
+                            <div class="textwidget">
+                                <div class="widget-pages">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Business Verticals</a></li>
+                                        <li><a href="#">Workflow</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Apply Loan</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="widget widget_mc4wp_form_widget">
+                            <h5 class="widget-title">Subscribe</h5>
+                            <form class="mc4wp-form mc4wp-form-272" method="post">
+                                <div class="mc4wp-form-fields">
+                                    <div class="widget-newsletter">
+                                        <input id="newsletter-email" type="email"
+                                               name="EMAIL" placeholder="Your email address"
+                                               required="">
+                                        <input type="submit" value="Submit"></div>
+                                    <br>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="widget widget_wilend_social_media_widget">
+                            <div class="widget widget-social">
+                                <div class="social-media">
+                                    <a href="#" class="facebook" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="twitter" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="linkedin" target="_blank">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="#" class="pinterest" target="_blank">
+                                        <i class="fab fa-pinterest"></i>
+                                    </a>
+                                    <a href="#" class="instagram" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="text-5" class="widget widget_text">
+                            <div class="textwidget">
+                                <div class="widget-pages">
+                                    <ul>
+                                        <li><a href="#">Terms of Use</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Legal Notice</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="assets/vendors/jquery/jquery-3.4.0.min.js"></script>
+<script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/vendors/jquery/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<script src="assets/vendors/jquery/jquery-nice-select/js/fastclick.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    $(function () {
+        var menu = $('#menu');
+        var button = $('#menu-toggle, .close-menu');
+        button.on('click', function () {
+            menu.toggleClass('active');
+        });
+    });
+
+    var content_height = document.getElementById('about').offsetHeight;
+    document.getElementById('welcome-image').style.minHeight = content_height + 'px';
+</script>
+<script>
+    $(document).ready(function () {
+        $('select').niceSelect();
+        FastClick.attach(document.body);
+    });
+    AOS.init();
+</script>
+</body>
+</html>

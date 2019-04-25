@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/vendors/jquery/jquery-nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="assets/vendors/jquery/jquery-nice-select/css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
+
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="assets/css/wizard.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>WiLend</title>
+</head>
+<body style="background-color: unset !important;">
+<div class="main-layout">
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="flex-row align-items-center justify-content-space-between">
+                    <p class="header__top__note">
+                        Contact with us
+                        <a href="#" class="ml-1">
+                            example@email.com
+                        </a>
+                        <a href="#" class="ml-3">
+                            +00 968 250 26 00
+                        </a>
+
+                    </p>
+                    <div class="header__top__item">
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="social__item facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social__item twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social__item instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="header__bottom">
+                <div class="mobile-header">
+                    <div class="logo-wrapper">
+                        <img src="assets/images/logo/wi_Lend.png" class="logo" alt="Logo">
+                    </div>
+                    <div class="menu-icon" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <nav class="main-menu" id="menu">
+                    <button class="close-menu">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu">
+                        <li class="">
+                            <a href="#top" class="menu__item">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#about" class="menu__item">About</a>
+                        </li>
+                        <li class="">
+                            <a href="#services" class="menu__item">BUSINESS VERTICALS</a>
+                        </li>
+                        <li class="">
+                            <a href="#workflow" class="menu__item">Workflow</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="menu__item">Contact</a>
+                        </li>
+                        <li class="active">
+                            <a href="apply-loan.html" class="menu__item">Apply Loan</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="wizard">
+        <div class="container">
+            <form class="steps" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="">
+                <ul id="progressbar">
+                    <li class="active">Borrower Details</li>
+                    <li>Get Your Rate</li>
+                    <!--<li>Personal Information</li>-->
+                    <li>Upload Documents</li>
+                    <li>Bank Information</li>
+                    <li>Your Story</li>
+                </ul>
+
+                <fieldset>
+                    <div class="fs-section">
+                        <div class="fs-section__head">
+                            <h2 class="fs-title">Tell us about your loan</h2>
+                            <h3 class="fs-subtitle">We just need some basic information for your loan</h3>
+                        </div>
+
+                        <div class="fs-section__body">
+                            <div class="hs_loan_amount field hs-form-field">
+                                <label for="loan_amount">
+                                    Enter your Loan Amount *</label>
+                                <input id="loan_amount" name="loan_amount"
+                                       required="required" type="number" value="" placeholder=""
+                                       data-rule-required="true"
+                                       data-msg-required="Please include your loan amount">
+                                <span class="error1" style="display: none;">
+                                                              <i class="error-log fa fa-exclamation-triangle"></i>
+                                                        </span>
+                            </div>
+
+                            <div class="hs_loan_type field hs-form-field">
+
+                                <label for="loan_type">Loan Type *</label>
+
+                                <select id="loan_type" name="loan_type" required="required" data-rule-required="true"
+                                        data-msg-required="Please select a loan type">
+                                    <option value="">Select a loan type</option>
+                                    <option value="1">Personal</option>
+                                    <option value="2">Auto</option>
+                                    <option value="3">Medical</option>
+                                    <option value="4">Home</option>
+                                    <option value="5">Biz Invoice</option>
+                                </select>
+                                <span class="error1" style="display: none;">
+                                                            <i class="error-log fa fa-exclamation-triangle"></i>
+                                                        </span>
+                            </div>
+
+                            <div class="hs_loan_purpose field hs-form-field hs_loan_purpose">
+
+                                <label for="loan_purpose">Loan Purpose *</label>
+
+                                <select id="loan_purpose" name="loan_purpose" required="required"
+                                        data-rule-required="true"
+                                        data-msg-required="Please select a loan purpose">
+                                    <option value="">Select a loan purpose</option>
+                                    <option value="1">Purpose 1</option>
+                                    <option value="2">Purpose 2</option>
+                                    <option value="3">Purpose 3</option>
+                                    <option value="4">Purpose 4</option>
+                                    <option value="5">Purpose 5</option>
+                                </select>
+                                <span class="error1" style="display: none;">
+                                                            <i class="error-log fa fa-exclamation-triangle"></i>
+                                                        </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fs-section">
+                        <div class="fs-section__head">
+                            <h2 class="fs-title">Tell us about yourself</h2>
+                            <h3 class="fs-subtitle">To provide you a custom rate. we'll run a soft credit pull. This
+                                will
+                                not affect your credit score</h3>
+                        </div>
+
+                        <div class="fs-section__body">
+                            <div class="row">
+                                <div class="hs_first_name field hs-form-field col-md-6">
+                                    <label for="first_name">
+                                        Name *</label>
+                                    <input id="first_name" name="first_name"
+                                           required="required" type="text" value="" placeholder=""
+                                           data-rule-required="true"
+                                           data-msg-required="Please include your full name">
+                                    <span class="error1" style="display: none;">
+                                                                <i class="error-log fa fa-exclamation-triangle"></i>
+                                                            </span>
+                                </div>
+
+                                <div class="hs_email field hs-form-field col-md-6">
+                                    <label for="email">Email *</label>
+                                    <input id="email" name="email"
+                                           required="required" type="text" value="" placeholder=""
+                                           data-rule-required="true"
+                                           data-msg-required="Please include your email">
+                                    <span class="error1" style="display: none;">
+                                                                <i class="error-log fa fa-exclamation-triangle"></i>
+                                                            </span>
+                                </div>
+                            </div>
+
+                            <div class="hs_address field hs-form-field">
+                                <label for="address">Address *</label>
+                                <textarea id="address" name="address" required="required" data-rule-required="true"
+                                          data-msg-required="Please include your address"></textarea>
+                                <span class="error1" style="display: none;">
+                                                                <i class="error-log fa fa-exclamation-triangle"></i>
+                                                            </span>
+                            </div>
+
+                            <div class="row">
+                                <div class="hs_city field hs-form-field col-md-6">
+                                    <label for="city">
+                                        City / State *</label>
+                                    <input id="city" name="city"
+                                           required="required" type="text" value="" placeholder=""
+                                           data-rule-required="true"
+                                           data-msg-required="Please include city/state">
+                                    <span class="error1" style="display: none;">
+                                                                    <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                </span>
+                                </div>
+
+                                <div class="hs_email field hs-form-field col-md-6">
+                                    <label for="zip">Zip *</label>
+                                    <input id="zip" name="zip"
+                                           required="required" type="number" value="" placeholder=""
+                                           data-rule-required="true"
+                                           data-msg-required="Please include your zip code">
+                                    <span class="error1" style="display: none;">
+                                                                    <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                </span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="field hs-form-field col-md-6">
+                                    <label for="datepicker">
+                                        Date Of Birth *</label>
+                                    <input id="datepicker" name="date_of_birth"
+                                           type="text" value="" placeholder="">
+                                    <span class="error1" style="display: none;">
+                                                                    <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                </span>
+                                </div>
+
+                                <div class="hs_email field hs-form-field col-md-6">
+                                    <label for="mobile">Mobile *</label>
+                                    <input id="mobile" name="mobile"
+                                           required="required" type="number" value="" placeholder=""
+                                           data-rule-required="true"
+                                           data-msg-required="Please include your mobile no.">
+                                    <span class="error1" style="display: none;">
+                                                                    <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" data-page="1" name="next" class="next action-button" value="Next"/>
+                </fieldset>
+
+
+                <fieldset>
+                    <div class="fs-section">
+                        <div class="fs-section__head">
+                            <h2 class="fs-title">Loan Amount</h2>
+                            <h3 class="fs-subtitle">Please provide your loan amount for calculating interest rate</h3>
+                        </div>
+
+                        <div class="fs-section__body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="wrapper">
+                                        <div class="range-slider">
+                                            <input id="demo_0" type="text" class="js-range-slider" name="my_range"
+                                                   value=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="hs_amount field hs-form-field">
+                                        <div class="input-group">
+                                            <input type="number" min="10000" value="10000" max="2500000"
+                                                   class="js-input-to form-control" value="0">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fs-section">
+                        <div class="fs-section__head">
+                            <h2 class="fs-title">Rate</h2>
+                            <h3 class="fs-subtitle">
+                                If your desired term is not show, please call 0-256-56326 to speak to a customer service
+                            </h3>
+                        </div>
+
+                        <div class="fs-section__body">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Term</th>
+                                    <th>Monthly Payment</th>
+                                    <th>Interest Rate</th>
+                                    <th>APR</th>
+                                    <th>Lifetime Cost</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <label class="radio">
+                                            <input type="radio" name="rate">
+                                            <span class="checkround"></span>
+                                        </label>
+                                    </td>
+                                    <td>10-month</td>
+                                    <td>$200.00</td>
+                                    <td class="text-info">13.00%</td>
+                                    <td class="text-success">13.20%</td>
+                                    <td>$10,500.00</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="radio">
+                                            <input type="radio" name="rate">
+                                            <span class="checkround"></span>
+                                        </label>
+                                    </td>
+                                    <td>10-month</td>
+                                    <td>$200.00</td>
+                                    <td class="text-info">13.00%</td>
+                                    <td class="text-success">13.20%</td>
+                                    <td>$10,500.00</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="radio">
+                                            <input type="radio" name="rate">
+                                            <span class="checkround"></span>
+                                        </label>
+                                    </td>
+                                    <td>10-month</td>
+                                    <td>$200.00</td>
+                                    <td class="text-info">13.00%</td>
+                                    <td class="text-success">13.20%</td>
+                                    <td>$10,500.00</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="radio">
+                                            <input type="radio" name="rate">
+                                            <span class="checkround"></span>
+                                        </label>
+                                    </td>
+                                    <td>10-month</td>
+                                    <td>$200.00</td>
+                                    <td class="text-info">13.00%</td>
+                                    <td class="text-success">13.20%</td>
+                                    <td>$10,500.00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <input type="button" data-page="2" name="previous" class="previous action-button" value="Previous"/>
+                    <input type="button" data-page="2" name="next" class="next action-button" value="Next"/>
+                </fieldset>
+
+                <fieldset>
+                    <div class="fs-section">
+                        <div class="fs-section__head">
+                            <h2 class="fs-title">Income Verification</h2>
+                            <h3 class="fs-subtitle">
+                                Income verification if you receive a paycheck. please upload a scan, photo, or
+                                screenshot of
+                                ONE of there: your most recent pay stub OR a document identifying the name of the vendor
+                                such as the work number which your employer uses for income verification, and your
+                                salary
+                                key or identifying information for that vendor so we may look up your income information
+                            </h3>
+                        </div>
+
+                        <div class="fs-section__body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="hs_income_verification_type field hs-form-field">
+                                        <label for="income_verification">Income Verification</label>
+                                        <select id="income_verification" name="income_verification" required="required"
+                                                data-rule-required="true"
+                                                data-msg-required="Please select a verification type">
+                                            <option value="">Select a verification type</option>
+                                            <option value="1">paystub</option>
+                                        </select>
+                                        <span class="error1" style="display: none;">
+                                                                                                                                                                          <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                                                                                                                                                                            </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="hs_income_verification_image field hs-form-field">
+                                        <label for="income_verification_image">Income Verification Proof[ only pdf
+                                            ]</label>
+                                        <div id="income_verification_image" class="image-preview">
+                                            <input type="text" class="image-preview-filename"
+                                                   placeholder="Chose a file">
+                                            <span class="image-preview-buttons">
+                                                             <button type="button" class="image-preview-clear pl-2 pr-2"
+                                                                     style="display:none;">
+                     <i class="fas fa-times"></i>
+                                               </button>
+                                                 <div class="image-preview-input">
+                                                                                 <i class="fas fa-upload mr-1"></i>
+                                                                                                                 <span class="image-preview-input-title">Browse</span>
+                                                                                                                                                                 <input type="file"
+                                                                                                                                                                        accept="image/png, image/jpeg, image/gif"
+                                                                                                                                                                        name="input-file-preview"/>
+                          </div>
+                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fs-section">
+                        <div class="fs-section__head">
+                            <h2 class="fs-title">Identity Verification</h2>
+                            <h3 class="fs-subtitle">
+                                upload a scan, photo, or screenshot of a passport, birth certificate of naturalization,
+                                or
+                                permanent resident / green card
+                            </h3>
+                        </div>
+
+                        <div class="fs-section__body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="hs_identity_verification_type field hs-form-field">
+                                        <label for="hs_identity_verification">Identity Verification</label>
+                                        <select id="hs_identity_verification" name="identity_verification_type"
+                                                required="required"
+                                                data-rule-required="true"
+                                                data-msg-required="Please select a verification type">
+                                            <option value="">Select a verification type</option>
+                                            <option value="1">paystub</option>
+                                        </select>
+                                        <span class="error1" style="display: none;">
+                                                                                                                                                                          <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                                                                                                                                                                            </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="hs_identity_verification_image field hs-form-field">
+                                        <label for="hs_identity_verification_image">Identity Verification Proof[ only
+                                            pdf
+                                            ]</label>
+                                        <div class="image-preview" id="hs_identity_verification_image">
+                                            <input type="text" class="image-preview-filename"
+                                                   placeholder="Chose a file">
+                                            <span class="image-preview-buttons">
+                                                             <button type="button" class="image-preview-clear pl-2 pr-2"
+                                                                     style="display:none;">
+                     <i class="fas fa-times"></i>
+                                               </button>
+                                                 <div class="image-preview-input">
+                                                                                 <i class="fas fa-upload mr-1"></i>
+                                                                                                                 <span class="image-preview-input-title">Browse</span>
+                                                                                                                                                                 <input type="file"
+                                                                                                                                                                        accept="image/png, image/jpeg, image/gif"
+                                                                                                                                                                        name="input-file-preview"/>
+                          </div>
+                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fs-section">
+                        <div class="fs-section__head">
+                            <h2 class="fs-title">Proof Of Citizenship</h2>
+                            <h3 class="fs-subtitle">
+                                Please provide proof Citizenship or Permanent residency: acceptable document include
+                                passports, certificates of naturalization, and green cards
+                            </h3>
+                        </div>
+
+                        <div class="fs-section__body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="hs_citizenship_verification_type field hs-form-field">
+                                        <label for="citizenship_verification_type">Citizenship Verification</label>
+                                        <select id="citizenship_verification_type" name="citizenship_verification_type"
+                                                required="required"
+                                                data-rule-required="true"
+                                                data-msg-required="Please select a loan type">
+                                            <option value="">Select a verification type</option>
+                                            <option value="1">paystub</option>
+                                        </select>
+                                        <span class="error1" style="display: none;">
+                                                                                                                                                                  <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                                                                                                                                                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="hs_citizenship_verification_file field hs-form-field">
+                                        <label for="citizenship_verification_file">Citizenship Proof[ only pdf ]</label>
+                                        <div class="image-preview" id="citizenship_verification_file">
+                                            <input type="text" class="image-preview-filename"
+                                                   placeholder="Chose a file">
+                                            <span class="image-preview-buttons">
+                                                             <button type="button" class="image-preview-clear pl-2 pr-2"
+                                                                     style="display:none;">
+                     <i class="fas fa-times"></i>
+                                               </button>
+                                                 <div class="image-preview-input">
+                                                                                 <i class="fas fa-upload mr-1"></i>
+                                                                                                                 <span class="image-preview-input-title">Browse</span>
+                                                                                                                                                                 <input type="file"
+                                                                                                                                                                        accept="image/png, image/jpeg, image/gif"
+                                                                                                                                                                        name="input-file-preview"/>
+                          </div>
+                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fs-section">
+                        <div class="fs-section__head">
+                            <h2 class="fs-title">Other Document</h2>
+                            <h3 class="fs-subtitle">
+                                you may upload any other documents that you think are important in your loan decision
+                            </h3>
+                        </div>
+
+                        <div class="fs-section__body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="hs_other_document_title field hs-form-field">
+                                        <label for="other_document_title">
+                                            Other Document Title</label>
+                                        <input id="other_document_title" name="other_document_title"
+                                               required="required" type="text" value="" placeholder=""
+                                               data-rule-required="true"
+                                               data-msg-required="Please include your document title">
+                                        <span class="error1" style="display: none;">
+                                                                                                 <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                                                                                                   </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="hs_other_document_file field hs-form-field">
+                                        <label for="other_document_file">Other Document Proof[ only pdf ]</label>
+                                        <div class="image-preview" id="other_document_file">
+                                            <input type="text" class="image-preview-filename"
+                                                   placeholder="Chose a file">
+                                            <span class="image-preview-buttons">
+                                                             <button type="button" class="image-preview-clear pl-2 pr-2"
+                                                                     style="display:none;">
+                     <i class="fas fa-times"></i>
+                                               </button>
+                                                 <div class="image-preview-input">
+                                                                                 <i class="fas fa-upload mr-1"></i>
+                                                                                                                 <span class="image-preview-input-title">Browse</span>
+                                                                                                                                                                 <input type="file"
+                                                                                                                                                                        accept="image/png, image/jpeg, image/gif"
+                                                                                                                                                                        name="input-file-preview"/>
+                          </div>
+                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" data-page="3" name="previous" class="previous action-button" value="Previous"/>
+                    <input type="button" data-page="3" name="next" class="next action-button" value="Next"/>
+                </fieldset>
+
+                <fieldset>
+                    <div class="fs-section">
+                        <div class="fs-section__head">
+                            <h2 class="fs-title">Bank Information</h2>
+                            <h3 class="fs-subtitle">To provide you a custom rate. we'll run a soft credit pull. This
+                                will
+                                not affect your credit score</h3>
+                        </div>
+
+                        <div class="fs-section__body">
+                            <div class="row">
+                                <div class="hs_account_type field hs-form-field col-md-6">
+                                    <label for="account_type">Account Type</label>
+                                    <select id="account_type" name="account_type"
+                                            required="required"
+                                            data-rule-required="true"
+                                            data-msg-required="Please select a account type">
+                                        <option value="">Select a account type</option>
+                                        <option value="1">Saving Account</option>
+                                        <option value="1">Basic Account</option>
+                                    </select>
+                                    <span class="error1" style="display: none;">
+                                                                                                                                                                                                        <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                                                                                                                                                                                                          </span>
+                                </div>
+
+                                <div class="hs_bank_name field hs-form-field col-md-6">
+                                    <label for="bank_name">Bank Name *</label>
+                                    <input id="bank_name" name="bank_name"
+                                           required="required" type="text" value="" placeholder=""
+                                           data-rule-required="true"
+                                           data-msg-required="Please include bank name">
+                                    <span class="error1" style="display: none;">
+                                                                                       <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                                                                                         </span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="hs_account_number field hs-form-field col-md-6">
+                                    <label for="account_number">Account Number *</label>
+                                    <input id="account_number" name="account_number"
+                                           required="required" type="text" value="" placeholder=""
+                                           data-rule-required="true"
+                                           data-msg-required="Please include bank account number">
+                                    <span class="error1" style="display: none;">
+                                                                                                 <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                                                                                                   </span>
+                                </div>
+
+                                <div class="hs_confirm_account_number field hs-form-field col-md-6">
+                                    <label for="confirm_account_number">Confirm Account Number *</label>
+                                    <input id="confirm_account_number" name="confirm_account_number"
+                                           required="required" type="text" value="" placeholder=""
+                                           data-rule-required="true"
+                                           data-msg-required="Please confirm bank account number">
+                                    <span class="error1" style="display: none;">
+                                                                                                 <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                                                                                                   </span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="hs_account_holder field hs-form-field col-md-6">
+                                    <label for="account_holder">Account Holder *</label>
+                                    <input id="account_holder" name="account_holder"
+                                           required="required" type="text" value="" placeholder=""
+                                           data-rule-required="true"
+                                           data-msg-required="Please confirm bank account number">
+                                    <span class="error1" style="display: none;">
+                                                                                                 <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                                                                                                   </span>
+                                </div>
+
+                                <div class="hs_routing_number field hs-form-field col-md-6">
+                                    <label for="routing_number">Routing Number *</label>
+                                    <input id="routing_number" name="routing_number"
+                                           required="required" type="text" value="" placeholder=""
+                                           data-rule-required="true"
+                                           data-msg-required="Please include your routing number">
+                                    <span class="error1" style="display: none;">
+                                                                                                 <i class="error-log fa fa-exclamation-triangle"></i>
+                                                                                                                                                   </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" data-page="4" name="previous" class="previous action-button" value="Previous"/>
+                    <input type="button" data-page="4" name="next" class="next action-button" value="Next"/>
+                </fieldset>
+
+                <fieldset>
+                    <div class="fs-section">
+                        <div class="fs-section__head">
+                            <h2 class="fs-title">Your Story</h2>
+                            <h3 class="fs-subtitle">
+                                Write your story, why you want to get a loan.
+                            </h3>
+                        </div>
+
+                        <div class="fs-section__body">
+                            <div class="field hs-form-field">
+                             <textarea id="story" name="story"
+                                       cols="5" rows="5"
+                                       placeholder="Write here..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="button" data-page="5" name="previous" class="previous action-button" value="Previous"/>
+                    <button class="submit">
+                        Submit
+                    </button>
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<script src="assets/vendors/jquery/jquery-3.4.0.min.js"></script>
+<script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/vendors/jquery/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<script src="assets/vendors/jquery/jquery-nice-select/js/fastclick.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+<script src="assets/js/wizard.js"></script>
+<script>
+    // $(document).ready(function () {
+    //     $('select').niceSelect();
+    //     FastClick.attach(document.body);
+    // });
+    $('#datepicker').datepicker({
+        uiLibrary: 'bootstrap4'
+    });
+
+    $("#demo_0").ionRangeSlider({
+        min: 10000,
+        max: 2500000,
+        from: 10000,
+        step: 10000,
+        grid: true,
+        grid_num: 4,
+        grid_snap: false,
+        onChange: function (data) {
+            $(".js-input-to").val(data.from);
+           $()
+        },
+    });
+
+    $(".js-input-to").on('keyup', function(){
+        let my_range = $(".js-range-slider").data("ionRangeSlider");
+        my_range.update({
+            from: $(this).val(),
+        });
+    });
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+.hero-section{
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-section__overlay{
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+.hero-section__tab-area{
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 220px;
+}
+.tab-wrapper{
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.tab-wrapper .tab-content{
+    padding: 1.875rem;
+}
+.loan-form{
+
+}
+.loan-form__title{
+    font-size: 1.6rem;
+    color:#020d1d;
+    margin-bottom: 1rem;
+}
+.loan-form__label{
+    font-size: 1rem;
+}
+.btn-get-loan{
+    width: 100%;
+    background: #3F729B;
+    color: #fff;
+    height: 64px;
+    border: 2px solid transparent;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .1rem;
+    transition: .1s ease-out;
+}
+.btn-get-loan:hover{
+    background: #F58436;
+    color: #fff;
+    transition: .3s ease-in;
+}
+
+.tab{
+    width: 100%;
+    background-color: #3F729B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.tab__item{
+    flex: 1;
+}
+.tab__item__link{
+    width: 100%;
+    padding: 1.125rem .5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid #345d7f;
+    border-left: 1px solid #345d7f;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all .3s ease-in-out;
+}
+.tab__item__link:hover{
+    color: #F58436;
+}
+.tab__item:first-child > .tab__item__link{
+    border-left: 0;
+}
+.tab__item__link p{
+    margin-bottom: 0;
+}
+
+.tab__item__link.active{
+    background-color: #fff;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    color: #F58436;
+}
+
+@media (max-width: 767px) {
+    .hero-section__tab-area{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .loan-form__title{
+        font-size: 1.2rem;
+        color:#020d1d;
+        margin-bottom: 1rem;
+    }
+    .loan-form__label{
+        font-size: .9rem;
+    }
+    .btn-get-loan{
+        width: 100%;
+        background: #3F729B;
+        color: #fff;
+        height: 50px;
+        border: 2px solid transparent;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .1rem;
+        transition: .1s ease-out;
+    }
+
+    .tab{
+        width: 100%;
+        background-color: #3F729B;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    .tab__item{
+        flex: 1;
+    }
+    .tab__item__link{
+        padding: .5rem .2rem;
+        font-size: .8rem;
+    }
+}
