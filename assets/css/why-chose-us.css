@@ -5,11 +5,11 @@
 
 .why-chose-us p{
     font-size: .9rem;
-    text-align: justify;
 }
 
 .why-box {
     margin-top: 1.5rem;
+    text-align: center;
 }
 
 .why-box:last-child {
@@ -24,9 +24,10 @@
 
 
 .box{
-    padding: .8rem 0;
+    /*padding: .8rem 0;*/
     position: relative;
     z-index: 999;
+    margin-top: 1.5rem;
 }
 /*.box:after{*/
 /*    content: '';*/
@@ -44,8 +45,10 @@
 /*}*/
 .box__content{
     background-color: #fff;
-    width: 80%;
+    width: 100%;
+    padding: .5rem;
     padding-right: .8rem;
+    text-align: center;
 }
 .box__title{
     padding: .8rem 0;
