@@ -41,14 +41,14 @@
 .social__item {
     padding: 0;
     margin-right: .5rem;
-    font-size: .9rem;
-    color: #3F729B;
+    font-size: 1rem;
+    color: #fff;
     transition: .2s ease-out;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 1.4rem;
+    height: 1.4rem;
     border-radius: 2px;
 }
 
@@ -59,7 +59,7 @@
 .social__item:hover {
     color: #F58436;
     transition: .1s ease-out;
-    box-shadow: 0 14px 28px rgba(245, 132, 54,0.25), 0 10px 10px rgba(245, 132, 54,0.22);
+    box-shadow: 0 0 5px 5px rgba(245, 132, 54,0.08), 0 0 5px 5px rgba(245, 132, 54,0.08);
 }
 
 .header__bottom {
@@ -195,7 +195,7 @@
     /*}*/
 
     .main-menu {
-        width: 0px;
+        width: 0;
         height: 100%;
         top: 0;
         right: 0;
@@ -204,9 +204,11 @@
         position: fixed;
         z-index: 9999;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        transition: .2s ease-out;
     }
     .main-menu.active{
         width: 250px;
+        transition: .3s ease-in;
     }
 
     .menu li {

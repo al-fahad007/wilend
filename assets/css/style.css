@@ -11,7 +11,8 @@
 
 body {
     background-color: #fff;
-    font-family: 'Muli';
+    /*font-family: 'Muli', sans-serif;*/
+    font: .9rem/1.8 'Muli', sans-serif;;
     font-weight: 400;
     color: #6f7b8a;
     transition: all .3s ease-in-out;
@@ -85,20 +86,6 @@ a:hover {
     color: #1C2331;
     position: relative;
     margin-bottom: 1rem;
-}
-
-
-.why-box {
-    border-right: 1px solid #ccc;
-}
-
-.why-box:last-child {
-    border-right: none;
-}
-
-.why-box__title {
-    font-size: 1.2rem;
-    color: #3F729B;
 }
 
 

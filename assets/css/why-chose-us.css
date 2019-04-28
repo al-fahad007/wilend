@@ -1,8 +1,56 @@
 .why-chose-us{
-    background-color: #f8f9fa;
+    /*background-color: #f8f9fa;*/
+    background-color: #fff;
 }
 
 .why-chose-us p{
-    color: #797979;
     font-size: .9rem;
+    text-align: justify;
+}
+
+.why-box {
+    margin-top: 1.5rem;
+}
+
+.why-box:last-child {
+    border-right: none;
+}
+
+.why-box__title {
+    font-size: 1.2rem;
+    color: #3F729B;
+}
+
+
+
+.box{
+    padding: .8rem 0;
+    position: relative;
+    z-index: 999;
+}
+/*.box:after{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 80%;*/
+/*    height: 100%;*/
+/*    background-color: #020d1d;*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*    background-image: url("../images/Picture12.jpg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    z-index: -1;*/
+
+/*}*/
+.box__content{
+    background-color: #fff;
+    width: 80%;
+    padding-right: .8rem;
+}
+.box__title{
+    padding: .8rem 0;
+}
+.box__details{
+    font-size: .8rem;
+    margin-bottom: 0;
 }

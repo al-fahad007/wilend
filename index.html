@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="main-layout">
-    <header class="header">
+    <header id="top" class="header">
         <div class="header__top">
             <div class="container">
                 <div class="flex-row align-items-center justify-content-space-between">
@@ -91,7 +91,7 @@
         </div>
     </header>
 
-    <div id="top" class="hero-section" style="background-image:url('assets/images/Picture13.jpg')">
+    <div class="hero-section" style="background-image:url('assets/images/Picture13.jpg')">
         <div class="hero-section__overlay">
             <div class="container">
                 <div class="row">
@@ -318,7 +318,7 @@
         </div>
     </div>
 
-    <div id="services section" class="business-verticals" style="background-image: url('assets/images/Picture12.jpg')">
+    <div id="services" class="business-verticals" style="background-image: url('assets/images/Picture12.jpg')">
         <div class="business-verticals__overlay">
             <div class="container">
                 <h3 class="business-verticals__title">
@@ -327,7 +327,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-4 col-sm-12">
-                        <div class="services-box" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="services-box" data-aos="zoom-in-right" data-aos-duration="1000">
                             <div>
                                 <div class="icons">
                                     <a href="#">
@@ -350,7 +350,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-sm-12">
-                        <div class="services-box box" data-aos="fade-down" data-aos-duration="800">
+                        <div class="services-box box" data-aos="zoom-in-up" data-aos-duration="1000">
                             <div>
                                 <div class="icons">
                                     <a href="#">
@@ -373,7 +373,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-sm-12">
-                        <div class="services-box box" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="services-box box" data-aos="zoom-in-left" data-aos-duration="1000">
                             <div>
                                 <div class="icons">
                                     <a href="#">
@@ -396,7 +396,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-sm-12">
-                        <div class="services-box box" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="services-box box" data-aos="zoom-in-right" data-aos-duration="1000">
                             <div>
                                 <div class="icons">
                                     <a href="#">
@@ -419,7 +419,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-sm-12">
-                        <div class="services-box box" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="services-box box" data-aos="zoom-in-left" data-aos-duration="1000">
                             <div>
                                 <div class="icons">
                                     <a href="#">
@@ -572,34 +572,78 @@
 
     <div class="section why-chose-us">
         <div class="container">
-            <div class="row">
-                <div class="offset-xl-2 col-xl-8 offset-lg-2 col-lg-8 col-md-12 col-sm-12 col-12">
-                    <div class="section-title text-center mb-5">
-                        <h3 class="section__title">Why take a <span class="brand">loan with us?</span></h3>
+            <h3 class="section__title">Why take a <span class="brand">loan with us?</span></h3>
 
-                    </div>
-                </div>
-            </div>
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 why-box">
-                    <div class="text-center mb-3">
-                        <h5 class="mb-2 why-box__title">Fast</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, unde.</p>
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="box__content">
+                            <h5 class="box__title">
+                                Finding you the right loan
+                            </h5>
+
+                            <p class="box__details">
+                                We also specialise in business loans, including property, equipment, working capital and
+                                vehicle lending. And we can help you secure a loan to pay off a personal or business debt.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 why-box">
-                    <div class="text-center mb-3">
-                        <h5 class="mb-2 why-box__title">Flexible </h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, unde.</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 why-box">
-                    <div class="text-center">
-                        <h5 class="mb-2 why-box__title">Great rates</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, unde.</p>
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="box__content">
+                            <h5 class="box__title">
+                                Finding you the right loan
+                            </h5>
+
+                            <p class="box__details">
+                                We also specialise in business loans, including property, equipment, working capital and
+                                vehicle lending. And we can help you secure a loan to pay off a personal or business debt.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!--            <div class="row justify-content-center">-->
+            <!--                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 why-box">-->
+            <!--                    <div class="text-center mb-3">-->
+            <!--                        <h5 class="mb-2 why-box__title">Finding you the right loan</h5>-->
+            <!--                        <p>-->
+            <!--                            We also specialise in business loans, including property, equipment, working capital and-->
+            <!--                            vehicle lending. And we can help you secure a loan to pay off a personal or business debt.-->
+            <!--                        </p>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 why-box">-->
+            <!--                    <div class="text-center mb-3">-->
+            <!--                        <h5 class="mb-2 why-box__title">More than just property </h5>-->
+            <!--                        <p>-->
+            <!--                            We also specialise in business loans, including property, equipment, working capital and-->
+            <!--                            vehicle lending. And we can help you secure a loan to pay off a personal or business debt.-->
+            <!--                        </p>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 why-box">-->
+            <!--                    <div class="text-center">-->
+            <!--                        <h5 class="mb-2 why-box__title">The process is effortless</h5>-->
+            <!--                        <p>-->
+            <!--                            Our finance professionals handle all of the paperwork, from application right through to-->
+            <!--                            settlement. Everything is taken care of for you, so you can focus on getting ready for your-->
+            <!--                            perfect home.-->
+            <!--                        </p>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 why-box">-->
+            <!--                    <div class="text-center">-->
+            <!--                        <h5 class="mb-2 why-box__title">Get in touch</h5>-->
+            <!--                        <p>-->
+            <!--                            Talk to us about getting started on your next loan. We are happy to visit you at your home-->
+            <!--                            or office at a time that suits you.-->
+            <!--                        </p>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
         </div>
     </div>
 
@@ -649,7 +693,7 @@
                                 <br>
                                 <h4>
                                     1-800-<span
-                                    class="text-uppercase brand">WiLend</span>-4506
+                                        class="text-uppercase brand">WiLend</span>-4506
                                 </h4>
                                 <br>
                                 <p class="text-default-color text-big">
@@ -755,6 +799,7 @@
 </div>
 
 <script src="assets/vendors/jquery/jquery-3.4.0.min.js"></script>
+<script src="assets/vendors/jquery/jquery.smoothscroll.min.js"></script>
 <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="assets/vendors/jquery/jquery-nice-select/js/jquery.nice-select.min.js"></script>
 <script src="assets/vendors/jquery/jquery-nice-select/js/fastclick.js"></script>
@@ -777,6 +822,8 @@
         FastClick.attach(document.body);
     });
     AOS.init();
+
+    $('html').smoothScroll(500);
 </script>
 </body>
 </html>
