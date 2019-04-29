@@ -1,5 +1,10 @@
+.navbar-brand {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
 .navbar-brand img {
-    height: 1.4rem;
+    height: 1.8rem;
 }
 .sidebar-user-material .sidebar-user-material-body{
     background: url(../../global_assets/images/backgrounds/user_bg3.jpg) center center no-repeat;
