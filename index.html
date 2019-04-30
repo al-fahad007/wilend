@@ -10,87 +10,140 @@
     <link rel="stylesheet" href="assets/vendors/jquery/jquery-nice-select/css/nice-select.css">
     <link rel="stylesheet" href="assets/vendors/jquery/jquery-nice-select/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="assets/css/footer.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>WiLend</title>
 </head>
 <body>
 <div class="main-layout">
-    <header id="top" class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="flex-row align-items-center justify-content-space-between">
-                    <p class="header__top__note">
-                        Contact with us
-                        <a href="#" class="ml-1">
-                            example@email.com
-                        </a>
-                        <a href="#" class="ml-3">
-                            +00 968 250 26 00
-                        </a>
 
-                    </p>
-                    <div class="header__top__item">
-                        <ul class="social">
-                            <li>
-                                <a href="#" class="social__item facebook">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
+<!--    <header class="header">-->
+<!--        <div class="header__wrap">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-3">-->
+<!--                    <div class="logo-wrapper">-->
+<!--                        <img src="assets/images/logo/wi_Lend.png" class="logo" alt="">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-6">-->
+<!--                    <div class="menu-wrapper">-->
+<!--                        <ul class="menu">-->
+<!--                            <li class="active">-->
+<!--                                <a href="#top" class="menu__item">Home</a>-->
+<!--                            </li>-->
+<!--                            <li class="">-->
+<!--                                <a href="#about" class="menu__item">About</a>-->
+<!--                            </li>-->
+<!--                            <li class="">-->
+<!--                                <a href="#services" class="menu__item">BUSINESS VERTICALS</a>-->
+<!--                            </li>-->
+<!--                            <li class="">-->
+<!--                                <a href="#workflow" class="menu__item">Workflow</a>-->
+<!--                            </li>-->
+<!--                            <li class="">-->
+<!--                                <a href="#contact" class="menu__item">Contact</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3">-->
+<!--                    <div class="header__wrap__right">-->
+<!--                        <a class="header__contact">-->
+<!--                            <span class="header__contact__no">-->
+<!--                                <i class="fas fa-mobile-alt mr-2"></i>-->
+<!--                                +0566 056 0235-->
+<!--                            </span>-->
+<!--                        </a>-->
+<!--                        <a class="header__apply-loan">-->
+<!--                            <span class="header__apply-loan__content">-->
+<!--                                <i class="fas fa-hand-holding-usd mr-2"></i>-->
+<!--                                Apply Loan-->
+<!--                            </span>-->
+<!--                        </a>-->
+<!--                        <a class="menu-icon" id="menu-toggle">-->
+<!--                            <i class="fas fa-bars"></i>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </header>-->
+
+
+        <header id="top" class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="flex-row align-items-center justify-content-space-between">
+                        <p class="header__top__note">
+                            Contact with us
+                            <a href="#" class="ml-1">
+                                example@email.com
+                            </a>
+                            <a href="#" class="ml-3">
+                                +00 968 250 26 00
+                            </a>
+
+                        </p>
+                        <div class="header__top__item">
+                            <ul class="social">
+                                <li>
+                                    <a href="#" class="social__item facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social__item twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="social__item instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="header__bottom">
+                    <div class="mobile-header">
+                        <div class="logo-wrapper">
+                            <img src="assets/images/logo/wi_Lend.png" class="logo" alt="Logo">
+                        </div>
+                        <div class="menu-icon" id="menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                    <nav class="main-menu" id="menu">
+                        <button class="close-menu">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu">
+                            <li class="active">
+                                <a href="#top" class="menu__item">Home</a>
                             </li>
-                            <li>
-                                <a href="#" class="social__item twitter">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
+                            <li class="">
+                                <a href="#about" class="menu__item">About</a>
                             </li>
-                            <li>
-                                <a href="#" class="social__item instagram">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
+                            <li class="">
+                                <a href="#services" class="menu__item">BUSINESS VERTICALS</a>
+                            </li>
+                            <li class="">
+                                <a href="#workflow" class="menu__item">Workflow</a>
+                            </li>
+                            <li class="">
+                                <a href="#contact" class="menu__item">Contact</a>
+                            </li>
+                            <li class="">
+                                <a href="apply-loan.html" class="menu__item">Apply Loan</a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
-        </div>
-
-        <div class="container">
-            <div class="header__bottom">
-                <div class="mobile-header">
-                    <div class="logo-wrapper">
-                        <img src="assets/images/logo/wi_Lend.png" class="logo" alt="Logo">
-                    </div>
-                    <div class="menu-icon" id="menu-toggle">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-                <nav class="main-menu" id="menu">
-                    <button class="close-menu">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <ul class="menu">
-                        <li class="active">
-                            <a href="#top" class="menu__item">Home</a>
-                        </li>
-                        <li class="">
-                            <a href="#about" class="menu__item">About</a>
-                        </li>
-                        <li class="">
-                            <a href="#services" class="menu__item">BUSINESS VERTICALS</a>
-                        </li>
-                        <li class="">
-                            <a href="#workflow" class="menu__item">Workflow</a>
-                        </li>
-                        <li class="">
-                            <a href="#contact" class="menu__item">Contact</a>
-                        </li>
-                        <li class="">
-                            <a href="apply-loan.html" class="menu__item">Apply Loan</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+        </header>
 
     <div class="hero-section" style="background-image:url('assets/images/Picture13.jpg')">
         <div class="hero-section__overlay">
@@ -100,7 +153,7 @@
                         <div class="hero-section__tab-area">
                             <div class="tab-wrapper" data-aos="fade-up" data-aos-duration="1000">
                                 <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane fade active show" id="personal">
+                                    <div role="tabpanel" class="tab-pane fade active show personal" id="personal">
                                         <div class="loan-form">
                                             <form>
                                                 <div class="row">
@@ -129,7 +182,7 @@
                                         </div>
                                     </div>
 
-                                    <div role="tabpanel" class="tab-pane fade" id="auto">
+                                    <div role="tabpanel" class="tab-pane fade auto" id="auto">
                                         <div class="loan-form">
                                             <form>
                                                 <div class="row">
@@ -157,7 +210,7 @@
                                         </div>
                                     </div>
 
-                                    <div role="tabpanel" class="tab-pane fade" id="medical">
+                                    <div role="tabpanel" class="tab-pane fade medical" id="medical">
                                         <div class="loan-form">
                                             <form>
                                                 <div class="row">
@@ -187,7 +240,7 @@
                                         </div>
                                     </div>
 
-                                    <div role="tabpanel" class="tab-pane fade" id="home">
+                                    <div role="tabpanel" class="tab-pane fade home" id="home">
                                         <div class="loan-form">
                                             <form>
                                                 <div class="row">
@@ -217,7 +270,7 @@
                                         </div>
                                     </div>
 
-                                    <div role="tabpanel" class="tab-pane fade" id="biz-invoice">
+                                    <div role="tabpanel" class="tab-pane fade biz-invoice" id="biz-invoice">
                                         <div class="loan-form">
                                             <form>
                                                 <div class="row">
@@ -249,31 +302,31 @@
                                 <ul class="nav tab" id="get-loans" role="tablist">
                                     <li class="tab__item">
                                         <a class="tab__item__link active show" id="tab-1" data-toggle="tab"
-                                           href="#personal"
+                                           href=".personal"
                                            role="tab" aria-controls="responsibilities" aria-selected="true">
                                             <i class="far fa-user-circle"></i>
                                             <p>Personal</p></a>
                                     </li>
                                     <li class="tab__item">
-                                        <a class="tab__item__link" id="tab-2" data-toggle="tab" href="#auto"
+                                        <a class="tab__item__link" id="tab-2" data-toggle="tab" href=".auto"
                                            role="tab" aria-controls="responsibilities" aria-selected="true">
                                             <i class="fas fa-car"></i>
                                             <p>Auto</p></a>
                                     </li>
                                     <li class="tab__item">
-                                        <a class="tab__item__link" id="tab-3" data-toggle="tab" href="#medical"
+                                        <a class="tab__item__link" id="tab-3" data-toggle="tab" href=".medical"
                                            role="tab" aria-controls="responsibilities" aria-selected="true">
                                             <i class="fas fa-hospital"></i>
                                             <p>Medical</p></a>
                                     </li>
                                     <li class="tab__item">
-                                        <a class="tab__item__link" id="tab-4" data-toggle="tab" href="#home"
+                                        <a class="tab__item__link" id="tab-4" data-toggle="tab" href=".home"
                                            role="tab" aria-controls="responsibilities" aria-selected="true">
                                             <i class="fas fa-home"></i>
                                             <p>Home</p></a>
                                     </li>
                                     <li class="tab__item">
-                                        <a class="tab__item__link" id="tab-5" data-toggle="tab" href="#biz-invoice"
+                                        <a class="tab__item__link" id="tab-5" data-toggle="tab" href=".biz-invoice"
                                            role="tab" aria-controls="responsibilities" aria-selected="true">
                                             <i class="fas fa-file-invoice-dollar"></i>
                                             <p>Biz Invoice</p></a>
@@ -316,6 +369,97 @@
             </div>
             <div class="clearfix"></div>
             <br>
+        </div>
+    </div>
+
+    <div class="features section" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 pr-md-0">
+                    <div class="features__box-wrap">
+                        <h4 class="features__title">
+                            <span class="brand">WILEND</span> Features
+                        </h4>
+                        <h2 class="features__box-wrap__title">
+                            Quick
+                            Easy
+                            Flexible
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="features__wrap">
+                        <div class="features__row">
+                            <div class="features__box box-1">
+                                <i class="far fa-chart-bar "></i>
+                                <div class="features__box__content">
+                                    <h4 class="features__box__title">
+                                        Lower Rates
+                                    </h4>
+                                    <p class="features__box__info">
+                                        Predatory lending is a form of abuse in the granting of loan.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="features__box box-2">
+                                <i class="fas fa-skiing "></i>
+                                <div class="features__box__content">
+                                    <h4 class="features__box__title">
+                                        QUICK AND EASY
+                                    </h4>
+                                    <p class="features__box__info">
+                                        The most typical payment type is fully amortizing payment.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="features__box box-3">
+                                <i class="fas fa-money-check-alt "></i>
+                                <div class="features__box__content">
+                                    <h4 class="features__box__title">
+                                        NO PAYMENT PENALTY
+                                    </h4>
+                                    <p class="features__box__info">
+                                        A subsidized loan is reduced by a explicit or hidden subsidy.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="features__box box-4">
+                                <i class="fas fa-shield-alt "></i>
+                                <div class="features__box__content">
+                                    <h4 class="features__box__title">
+                                        SECURE PROCESS
+                                    </h4>
+                                    <p class="features__box__info">
+                                        The duration of the loan period is much shorter to the use.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="features__box box-5">
+                                <i class="far fa-thumbs-up "></i>
+                                <div class="features__box__content">
+                                    <h4 class="features__box__title">
+                                        5-MINUTE APPLICATION
+                                    </h4>
+                                    <p class="features__box__info">
+                                        A loan taken to purchase a car may be secured by the car.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="features__box box-6">
+                                <i class="fas fa-piggy-bank "></i>
+                                <div class="features__box__content">
+                                    <h4 class="features__box__title">
+                                        ONLY 3% INTEREST
+                                    </h4>
+                                    <p class="features__box__info">
+                                        Unsecured loans are not secured against borrower’s assets.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -573,7 +717,7 @@
 
     <div class="section why-chose-us">
         <div class="container">
-            <h3 class="section__title">Why take a <span class="brand">loan with us?</span></h3>
+<!--            <h3 class="section__title">Why take a <span class="brand">loan with us?</span></h3>-->
 
             <div class="row">
                 <div class="col-md-4">
@@ -675,7 +819,7 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="widget footer__text">
-                            <h5 class="footer__title">Useful links</h5>
+                            <h5 class="footer__title">Business Verticals</h5>
                             <div class="text">
                                 <div class="footer__links">
                                     <ul>

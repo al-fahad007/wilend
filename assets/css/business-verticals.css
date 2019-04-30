@@ -34,10 +34,12 @@
     margin: 15px 0;
     text-align: center;
     min-height: 300px;
+    border-bottom: 4px solid #3F729B;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all .2s ease-in-out;
 }
 .services-box .icons a{
     font-size: 4rem;
@@ -52,6 +54,9 @@
 }
 .services-box p{
     color: #797979;
+}
+.services-box:hover{
+    border-color: #F58436;
 }
 .services-box:hover > div .icons a,
 .services-box:hover > div .services-box__title a {

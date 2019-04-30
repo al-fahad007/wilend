@@ -27,7 +27,6 @@
     /*padding: .8rem 0;*/
     position: relative;
     z-index: 999;
-    margin-top: 1.5rem;
 }
 /*.box:after{*/
 /*    content: '';*/
@@ -50,6 +49,12 @@
     padding-right: .8rem;
     text-align: center;
 }
+.box__top{
+    width: 100%;
+}
+
+
+
 .box__title{
     padding: .8rem 0;
 }

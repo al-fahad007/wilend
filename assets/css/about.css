@@ -54,7 +54,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: -12px 12px 0px 0px rgba(0,0,0,0.16);
+    box-shadow: -12px 12px 0px 0px rgba(245, 132, 54, .4);
 }
 .welcome-image img{
     width: 100%;
