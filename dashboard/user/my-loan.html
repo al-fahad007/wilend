@@ -64,33 +64,49 @@
         <ul class="navbar-nav ml-md-auto">
             <li class="nav-item dropdown">
                 <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
-                    <i class="icon-make-group mr-2"></i>
-                    Connect
+                    <i class="icon-bell3 mr-2"></i>
+                    Notifications
                 </a>
+
                 <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">
-                    <div class="dropdown-content-body p-2">
-                        <div class="row no-gutters">
-                            <div class="col-12 col-sm-4">
-                                <a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-                                    <i class="icon-facebook text-primary-800 icon-2x"></i>
-                                    <div class="font-size-sm font-weight-semibold text-uppercase mt-2">Facebook</div>
-                                </a>
-                            </div>
+                    <div class="dropdown-content-header">
+                        <span class="font-size-sm line-height-sm text-uppercase font-weight-semibold">Latest Notifications</span>
+                    </div>
 
-                            <div class="col-12 col-sm-4">
-                                <a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-                                    <i class="icon-twitter text-info-400 icon-2x"></i>
-                                    <div class="font-size-sm font-weight-semibold text-uppercase mt-2">Twitter</div>
-                                </a>
-                            </div>
+                    <div class="dropdown-content-body dropdown-scrollable">
+                        <ul class="media-list">
+                            <li class="media">
+                                <div class="mr-3">
+                                    <img src="../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+                                </div>
 
-                            <div class="col-12 col-sm-4">
-                                <a href="#" class="d-block text-default text-center ripple-dark rounded p-3">
-                                    <i class="icon-linkedin2 text-indigo-800 icon-2x"></i>
-                                    <div class="font-size-sm font-weight-semibold text-uppercase mt-2">linkedin</div>
-                                </a>
-                            </div>
-                        </div>
+                                <div class="media-body">
+                                    Hi Mr. Jhon your request id
+                                    <a href="#">#123</a>
+                                    is accepted for loan. <a href="#" class="">Details</a>
+                                    <div class="font-size-sm text-muted mt-1">4 minutes ago</div>
+                                </div>
+                            </li>
+
+                            <li class="media">
+                                <div class="mr-3">
+                                    <img src="../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
+                                </div>
+
+                                <div class="media-body">
+                                    Hi Mr. Jhon your request id
+                                    <a href="#">#12</a>
+                                    is accepted for loan. <a href="#" class="">Details</a>
+                                    <div class="font-size-sm text-muted mt-1">05-08-2018</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown-content-footer bg-light">
+                        <a href="#"
+                           class="font-size-sm line-height-sm text-uppercase font-weight-semibold text-grey mr-auto">
+                            All Notifications</a>
                     </div>
                 </div>
             </li>
@@ -135,13 +151,11 @@
 
             <div class="card card-sidebar-mobile">
                 <ul class="nav nav-sidebar" data-nav-type="accordion">
-
-                    <!-- Main -->
                     <li class="nav-item-header">
                         <div class="text-uppercase font-size-xs line-height-xs">Main</div>
                         <i class="icon-menu" title="Main"></i></li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link active">
+                        <a href="index.html" class="nav-link">
                             <i class="icon-home4"></i>
                             <span>
                                 Dashboard
@@ -149,7 +163,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="profile.html" class="nav-link">
                             <i class="icon-user"></i>
                             <span>
                                 My profile
@@ -157,44 +171,32 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="my-loan.html" class="nav-link active">
                             <i class="icon-coins"></i>
                             <span>
-                                My Loan
+                                My Loans
                             </span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="my-requests.html" class="nav-link">
                             <i class="icon-list"></i>
                             <span>
-                                My Request
+                                My Requests
                             </span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="icon-bell3"></i>
+                        <a href="tickets.html" class="nav-link">
+                            <i class="icon-comment-discussion"></i>
                             <span>
-                                Request Feedback
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="icon-mail5"></i>
-                            <span>
-                                Messages
+                                Tickets
                             </span>
                         </a>
                     </li>
                 </ul>
             </div>
-            <!-- /main navigation -->
-
         </div>
-        <!-- /sidebar content -->
-
     </div>
 
     <div class="content-wrapper">
@@ -223,436 +225,201 @@
         </div>
 
         <div class="content">
-            <div class="row">
-                <div class="col-xl-7">
+            <div class="card bg-transparent">
+                <div class="card-header header-elements-inline bg-white">
+                    <h5 class="card-title">Running Loan Status</h5>
+                    <div class="header-elements">
+                        <div class="list-icons">
+                            <a class="list-icons-item" data-action="collapse"></a>
+                            <a class="list-icons-item" data-action="reload"></a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card-body " style="">
                     <div class="row">
-                        <div class="col-sm-6 col-xl-6">
-                            <div class="card card-body">
-                                <div class="media">
-                                    <div class="mr-3 align-self-center">
-                                        <i class="icon-home4 icon-3x text-success-400"></i>
-                                    </div>
-
-                                    <div class="media-body text-right">
-                                        <span class="text-uppercase font-size-sm text-muted">Loan Type</span>
-                                        <h3 class="font-weight-semibold mb-0">Home</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xl-6">
-                            <div class="card card-body">
-                                <div class="media">
-                                    <div class="mr-3 align-self-center">
-                                        <i class="icon-enter6 icon-3x text-indigo-400"></i>
-                                    </div>
-
-                                    <div class="media-body text-right">
-                                        <span class="text-uppercase font-size-sm text-muted">Loan Amount</span>
-                                        <h3 class="font-weight-semibold mb-0">245,382</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xl-6">
-                            <div class="card card-body">
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h3 class="font-weight-semibold mb-0">54,390</h3>
-                                        <span class="text-uppercase font-size-sm text-muted">total comments</span>
-                                    </div>
-
-                                    <div class="ml-3 align-self-center">
-                                        <i class="icon-bubbles4 icon-3x text-blue-400"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xl-6">
-                            <div class="card card-body">
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h3 class="font-weight-semibold mb-0">389,438</h3>
-                                        <span class="text-uppercase font-size-sm text-muted">total orders</span>
-                                    </div>
-
-                                    <div class="ml-3 align-self-center">
-                                        <i class="icon-bag icon-3x text-danger-400"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card">
-                        <div class="card-header header-elements-inline">
-                            <h6 class="card-title">Running Loan Info</h6>
-                        </div>
-
-                        <div class="card-body py-0">
-
-
+                        <div class="col-xl-6">
 
                             <div class="row">
-                                <div class="col-sm-4 mb-3">
-                                    <div class="d-flex align-items-center justify-content-center mb-2">
-                                        <a href="#"
-                                           class="btn bg-transparent border-teal text-teal rounded-round border-2 btn-icon mr-3 legitRipple">
-                                            <i class="icon-home4"></i>
-                                        </a>
-                                        <div>
-                                            <div class="font-weight-semibold">Loan Type</div>
-                                            <span class="text-muted">Home</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4 mb-3">
-                                    <div class="d-flex align-items-center justify-content-center mb-2">
-                                        <a href="#"
-                                           class="btn bg-transparent border-warning-400 text-warning-400 rounded-round border-2 btn-icon mr-3 legitRipple">
-                                            <i class="icon-coin-dollar"></i>
-                                        </a>
-                                        <div>
-                                            <div class="font-weight-semibold">Loan Amount</div>
-                                            <span class="text-muted">$220,000</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4 mb-3">
-                                    <div class="d-flex align-items-center justify-content-center mb-2">
-                                        <a href="#"
-                                           class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon mr-3 legitRipple">
-                                            <i class="icon-people"></i>
-                                        </a>
-                                        <div>
-                                            <div class="font-weight-semibold">Loan Status</div>
-                                            <span class="text-muted"><span
-                                                    class="badge badge-mark border-success mr-2"></span> Active</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-sm-4 mb-3">
-                                    <div class="d-flex align-items-center justify-content-center mb-2">
-                                        <a href="#"
-                                           class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon mr-3 legitRipple">
-                                            <i class="icon-watch2"></i>
-                                        </a>
-                                        <div>
-                                            <div class="font-weight-semibold"> Issued on</div>
-                                            <span class="text-muted">01/04/2019</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4 mb-3">
-                                    <div class="d-flex align-items-center justify-content-center mb-2">
-                                        <a href="#"
-                                           class="btn bg-transparent border-warning-400 text-warning-400 rounded-round border-2 btn-icon mr-3 legitRipple">
-                                            <i class="icon-coin-dollar"></i>
-                                        </a>
-                                        <div>
-                                            <div class="font-weight-semibold">Loan Amount</div>
-                                            <span class="text-muted">$220,000</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4 mb-3">
-                                    <div class="d-flex align-items-center justify-content-center mb-2">
-                                        <a href="#"
-                                           class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon mr-3 legitRipple">
-                                            <i class="icon-people"></i>
-                                        </a>
-                                        <div>
-                                            <div class="font-weight-semibold">Loan Status</div>
-                                            <span class="text-muted"><span
-                                                    class="badge badge-mark border-success mr-2"></span> Active</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /traffic sources -->
-
-                </div>
-
-                <div class="col-xl-5">
-
-                    <!-- Sales stats -->
-                    <div class="card">
-                        <div class="card-header header-elements-inline">
-                            <h6 class="card-title">Sales statistics</h6>
-                            <div class="header-elements">
-                                <div class="multiselect-native-select"><select class="form-control" id="select_date"
-                                                                               data-fouc="">
-                                    <option value="val1">June, 29 - July, 5</option>
-                                    <option value="val2">June, 22 - June 28</option>
-                                    <option value="val3" selected="">June, 15 - June, 21</option>
-                                    <option value="val4">June, 8 - June, 14</option>
-                                </select>
-                                    <div class="btn-group" style="width: 100%;">
-                                        <button type="button"
-                                                class="multiselect dropdown-toggle text-default font-weight-semibold bg-transparent border-0 cursor-pointer outline-0 py-0 pl-0"
-                                                data-toggle="dropdown" title="June, 15 - June, 21"
-                                                style="width: 100%; overflow: hidden; text-overflow: ellipsis;"><span
-                                                class="multiselect-selected-text"><span
-                                                class="badge badge-mark border-warning mr-2"></span>June, 15 - June, 21</span>
-                                        </button>
-                                        <div class="multiselect-container dropdown-menu dropdown-menu-right">
-                                            <div class="multiselect-item dropdown-item form-check" tabindex="0"><label
-                                                    class="form-check-label"><input type="radio" value="val1"> June, 29
-                                                - July, 5<span class="form-check-control-indicator"></span></label>
-                                            </div>
-                                            <div class="multiselect-item dropdown-item form-check" tabindex="0"><label
-                                                    class="form-check-label"><input type="radio" value="val2"> June, 22
-                                                - June 28<span class="form-check-control-indicator"></span></label>
-                                            </div>
-                                            <div class="multiselect-item dropdown-item form-check active" tabindex="0">
-                                                <label class="form-check-label"><input type="radio" value="val3"> June,
-                                                    15 - June, 21<span
-                                                            class="form-check-control-indicator"></span></label></div>
-                                            <div class="multiselect-item dropdown-item form-check" tabindex="0"><label
-                                                    class="form-check-label"><input type="radio" value="val4"> June, 8 -
-                                                June, 14<span class="form-check-control-indicator"></span></label></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-body py-0">
-                            <div class="row text-center">
-                                <div class="col-4">
-                                    <div class="mb-3">
-                                        <h5 class="font-weight-semibold mb-0">5,689</h5>
-                                        <span class="text-muted font-size-sm">new orders</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-4">
-                                    <div class="mb-3">
-                                        <h5 class="font-weight-semibold mb-0">32,568</h5>
-                                        <span class="text-muted font-size-sm">this month</span>
-                                    </div>
-                                </div>
-
-                                <div class="col-4">
-                                    <div class="mb-3">
-                                        <h5 class="font-weight-semibold mb-0">$23,464</h5>
-                                        <span class="text-muted font-size-sm">expected profit</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="chart mb-2" id="app_sales">
-                            <svg width="652.90625" height="255">
-                                <g transform="translate(50,5)"></g>
-                            </svg>
-                        </div>
-                        <div class="chart" id="monthly-sales-stats">
-                            <svg width="652.90625" height="100">
-                                <g transform="translate(35,20)"></g>
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- /sales stats -->
-
-                </div>
-            </div>
-
-            <div class="">
-                <div class="row">
-                    <div class="col-lg-4 ">
-                        <div class="card">
-                            <div class="card-body bg-indigo-400 text-center card-img-top"
-                                 style="background-image: url(../global_assets/images/backgrounds/panel_bg.png); background-size: contain;">
-                                <div class="card-img-actions d-inline-block mb-3">
-                                    <img class="img-fluid rounded-circle"
-                                         src="../global_assets/images/avatar.jpg" width="170"
-                                         height="170" alt="">
-                                </div>
-
-                                <h6 class="font-weight-semibold mb-0">Mr. Jhon</h6>
-                                <span class="d-block opacity-75">jhon@email.com</span>
-                            </div>
-
-                            <div class="card-body border-top-0">
-                                <div class="d-sm-flex flex-sm-wrap mb-3">
-                                    <div class="font-weight-semibold">Phone:</div>
-                                    <div class="ml-sm-auto mt-2 mt-sm-0">+3630 8911837</div>
-                                </div>
-
-                                <div class="d-sm-flex flex-sm-wrap mb-3">
-                                    <div class="font-weight-semibold">Email:</div>
-                                    <div class="ml-sm-auto mt-2 mt-sm-0"><a href="#">personal@domain.com</a></div>
-                                </div>
-
-                                <div class="d-sm-flex">
-                                    <div class="font-weight-semibold">Address:</div>
-                                    <div class="ml-sm-auto mt-2 mt-sm-0 text-muted text-right pl-3">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti,
-                                        nesciunt?
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="#" class="btn bg-warning-400 legitRipple">
-                                    <i class="icon-pencil5 mr-2"></i>
-                                    Update Profile
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8">
-                        <div class="row">
-                            <div class="col-lg-12">
-
-                                <div class="card border-left-3 border-left-warning rounded-left-0">
-                                    <div class="card-body">
-                                        <div class="d-sm-flex align-item-sm-center flex-sm-nowrap">
-                                            <div>
-                                                <h6 class="font-weight-semibold">Running Loan</h6>
-                                                <ul class="list list-unstyled mb-0">
-                                                    <li>User ID: #26215421245</li>
-                                                    <li>Issued on: <span class="font-weight-semibold">01/04/2019</span>
-                                                    </li>
-                                                </ul>
+                                <div class="col-sm-6 col-xl-6">
+                                    <div class="card card-body">
+                                        <div class="media">
+                                            <div class="mr-3 align-self-center">
+                                                <i class="icon-home4 icon-3x text-success-400"></i>
                                             </div>
 
-                                            <div class="text-sm-right mb-0 mt-3 mt-sm-0 ml-auto">
-                                                <h6 class="font-weight-semibold">$220,000</h6>
-                                                <ul class="list list-unstyled mb-0">
-                                                    <li>Loan Type: <span class="font-weight-semibold">Home</span></li>
-                                                    <li class="dropdown">
-                                                        Status: &nbsp;
-                                                        <a href="#"
-                                                           class="badge bg-success-400 align-top">Active</a>
-                                                    </li>
-                                                </ul>
+                                            <div class="media-body text-right">
+                                                <span class="text-uppercase font-size-sm text-muted">Loan Type</span>
+                                                <h3 class="font-weight-semibold mb-0">Home</h3>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
-											<span>
-												<span class="badge badge-mark border-warning mr-2"></span>
-												Loan End Date:
-												<span class="font-weight-semibold">01/04/2021</span>
-											</span>
+                                <div class="col-sm-6 col-xl-6">
+                                    <div class="card card-body">
+                                        <div class="media">
+                                            <div class="mr-3 align-self-center">
+                                                <i class="icon-coin-dollar icon-3x text-indigo-400"></i>
+                                            </div>
 
-                                        <ul class="list-inline list-inline-condensed mb-0 mt-2 mt-sm-0">
-                                            <li class="list-inline-item">
-                                                <a href="#" class="text-default"><i class="icon-eye8"></i></a>
-                                            </li>
-                                        </ul>
+                                            <div class="media-body text-right">
+                                                <span class="text-uppercase font-size-sm text-muted">Loan Amount</span>
+                                                <h3 class="font-weight-semibold mb-0">$245,382</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xl-6">
+                                    <div class="card card-body">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <span class="text-uppercase font-size-sm text-muted">Total Deposit</span>
+                                                <h3 class="font-weight-semibold mb-0">24</h3>
+                                            </div>
+
+                                            <div class="ml-3 align-self-center">
+                                                <i class="icon-database icon-3x text-blue-400"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-xl-6">
+                                    <div class="card card-body">
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <span class="text-uppercase font-size-sm text-muted">Deposit Date / Month</span>
+                                                <h3 class="font-weight-semibold mb-0">1st Date</h3>
+                                            </div>
+
+                                            <div class="ml-3 align-self-center">
+                                                <i class="icon-watch icon-3x text-danger-400"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card card-body">
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <p><i class="icon-calendar icon-2x d-inline-block text-info"></i></p>
+                                        <span class="text-muted font-size-sm">Issued on</span>
+                                        <h5 class="font-weight-semibold mb-0">01-04-2019</h5>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <p><i class="icon-calendar2 icon-2x d-inline-block text-warning"></i></p>
+                                        <span class="text-muted font-size-sm">Loan End Date</span>
+                                        <h5 class="font-weight-semibold mb-0">01-04-2021</h5>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <p><i class="icon-cash3 icon-2x d-inline-block text-success"></i></p>
+                                        <span class="text-muted font-size-sm">Deposit / Month</span>
+                                        <h5 class="font-weight-semibold mb-0">$9,200</h5>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-md-6">
+                                            <div class="mb-4 mt-4 pl-2 pr-2">
+                                                <div class="media mb-3">
+                                                    <div class="mr-3 align-self-center">
+                                                        <i class="icon-pulse2 icon-2x text-success-400 opacity-75"></i>
+                                                    </div>
 
-                        <div class="row">
-                            <div class="col-sm-6 col-xl-6">
-                                <div class="card card-body">
-                                    <div class="media mb-3">
-                                        <div class="mr-3 align-self-center">
-                                            <i class="icon-pulse2 icon-2x text-success-400 opacity-75"></i>
+                                                    <div class="media-body">
+                                                        <h6 class="font-weight-semibold mb-0">Submitted Deposit</h6>
+                                                        <span class="text-muted"> Until April 01, 2019</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-2 font-size-lg text-success-400">
+                                                    <span class="float-right">$27,600</span>
+                                                    3 / 24
+                                                </div>
+
+                                                <div class="progress mb-2" style="height: 0.125rem;">
+                                                    <div class="progress-bar bg-success-400" style="width: 13.5%"></div>
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div class="media-body">
-                                            <h6 class="font-weight-semibold mb-0">Total Deposit</h6>
-                                            <span class="text-muted"> Until April 01, 2019</span>
-                                        </div>
-                                    </div>
+                                        <div class="col-xl-6 col-md-6">
+                                            <div class="mb-4 mt-4 pl-2 pr-2">
+                                                <div class="media mb-3">
+                                                    <div class="media-body">
+                                                        <h6 class="font-weight-semibold mb-0">Last deposit</h6>
+                                                        <span class="text-muted">April, 01, 2019</span>
+                                                    </div>
 
-                                    <div class="mb-2 font-size-lg text-success-400">
-                                        <span class="float-right">$27,600</span>
-                                        3
-                                    </div>
+                                                    <div class="ml-3 align-self-center">
+                                                        <i class="icon-arrow-left15 icon-2x text-indigo-400 opacity-75"></i>
+                                                    </div>
+                                                </div>
 
-                                    <div class="progress mb-2" style="height: 0.125rem;">
-                                        <div class="progress-bar bg-success-400" style="width: 13.5%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-xl-6">
-                                <div class="card card-body">
-                                    <div class="media mb-3">
-                                        <div class="media-body">
-                                            <h6 class="font-weight-semibold mb-0">Last deposit</h6>
-                                            <span class="text-muted">April, 01, 2019</span>
+                                                <div class="mb-2 font-size-lg text-indigo-400">
+                                                    <span class="float-right">$9,200</span>
+                                                    #156421
+                                                </div>
+                                                <div class="progress mb-2" style="height: 0.125rem;">
+                                                    <div class="progress-bar bg-indigo-400" style="width: 100%"></div>
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div class="ml-3 align-self-center">
-                                            <i class="icon-arrow-left15 icon-2x text-indigo-400 opacity-75"></i>
+                                        <div class="col-xl-6 col-md-6">
+                                            <div class="mb-4 mt-4 pl-2 pr-2">
+                                                <div class="media mb-3">
+                                                    <div class="media-body">
+                                                        <h6 class="font-weight-semibold mb-0">Next deposit</h6>
+                                                        <span class="text-muted">May, 01, 2019</span>
+                                                    </div>
+
+                                                    <div class="ml-3 align-self-center">
+                                                        <i class="icon-arrow-right15 icon-2x text-danger-400 opacity-75"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-2 font-size-lg text-danger-400">
+                                                    <span class="float-right">$9,200</span>
+                                                    10day remaining
+                                                </div>
+
+                                                <div class="progress mb-2" style="height: 0.125rem;">
+                                                    <div class="progress-bar bg-danger-400" style="width: 18%"></div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="mb-2 font-size-lg text-indigo-400">
-                                        <span class="float-right">$9,200</span>
-                                        #156421
-                                    </div>
-                                    <div class="progress mb-2" style="height: 0.125rem;">
-                                        <div class="progress-bar bg-indigo-400" style="width: 13.5%"></div>
-                                    </div>
-                                </div>
-                            </div>
+                                        <div class="col-xl-6 col-md-6">
+                                            <div class="mb-4 mt-4 pl-2 pr-2">
+                                                <div class="media mb-3">
+                                                    <div class="mr-3 align-self-center">
+                                                        <i class="icon-hour-glass2 icon-2x text-blue-400 opacity-75"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h6 class="font-weight-semibold mb-0">Deposit remaining</h6>
+                                                        <span class="text-muted">Until 1st of April 2021</span>
+                                                    </div>
+                                                </div>
 
-                            <div class="col-sm-6 col-xl-6">
-                                <div class="card card-body">
-                                    <div class="media mb-3">
-                                        <div class="media-body">
-                                            <h6 class="font-weight-semibold mb-0">Next deposit</h6>
-                                            <span class="text-muted">May, 01, 2019</span>
+                                                <div class="mb-2 font-size-lg text-blue-400">
+                                                    <span class="float-right">$192400</span>
+                                                    19 /24
+                                                </div>
+                                                <div class="progress mb-2" style="height: 0.125rem;">
+                                                    <div class="progress-bar bg-blue" style="width: 86.5%"></div>
+                                                </div>
+                                            </div>
                                         </div>
-
-                                        <div class="ml-3 align-self-center">
-                                            <i class="icon-arrow-right15 icon-2x text-danger-400 opacity-75"></i>
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-2 font-size-lg text-danger-400">
-                                        <span class="float-right">$9,200</span>
-                                        10day remaining
-                                    </div>
-
-                                    <div class="progress mb-2" style="height: 0.125rem;">
-                                        <div class="progress-bar bg-danger-400" style="width: 18%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-xl-6">
-                                <div class="card card-body">
-                                    <div class="media mb-3">
-                                        <div class="mr-3 align-self-center">
-                                            <i class="icon-hour-glass2 icon-2x text-blue-400 opacity-75"></i>
-                                        </div>
-                                        <div class="media-body">
-                                            <h6 class="font-weight-semibold mb-0">Deposit remaining</h6>
-                                            <span class="text-muted">Until 1st of April 2021</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-2 font-size-lg text-blue-400">
-                                        <span class="float-right">$192400</span>
-                                        19
-                                    </div>
-                                    <div class="progress mb-2 justify-content-end" style="height: 0.125rem;">
-                                        <div class="progress-bar bg-blue" style="width: 86.5%"></div>
                                     </div>
                                 </div>
                             </div>
